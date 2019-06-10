@@ -3,7 +3,7 @@ import React from 'react';
 export default props => {
   return props.data.map(char => {
     return (
-      <div className='character-card'>
+      <div className='character-card' key={char.url}>
         <div className='character-info'>
           <h3>{char.name}</h3>
           <p>

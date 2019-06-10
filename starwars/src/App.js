@@ -38,6 +38,7 @@ class App extends Component {
         <Characters
           data={this.state.starwarsChars}
           className='cards-container'
+          key={this.state.url}
         />
       </div>
     );
